@@ -4,9 +4,27 @@
   box-sizing: border-box;
 }
 
+html {
+  width: 1200px;
+  text-align: left;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-size: 20px;
+}
+
+p {
+  font-size: 70%;
+  line-height: 1.6;
+}
+
+h2 {
+  color: #40b46d;
+  margin: 40px 0 30px;
+  font-size: 70%;
+  text-transform: uppercase;
 }
 
 .main-nav {
@@ -31,20 +49,14 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  width: 100%;
 }
 
 .header-title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 120px;
-}
-.header-title button {
-  margin-top: 30px;
-  padding: 10px;
-  border-radius: 4px;
-  background-color: #40b46d;
-  color: white;
+  margin-top: 20%;
 }
 .header-title h1 {
   text-transform: uppercase;
@@ -53,6 +65,52 @@ header {
 .header-title p {
   color: rgba(255, 255, 255, 0.788);
   font-weight: 300;
+}
+
+.btn {
+  margin: 5% 0 5%;
+  padding: 10px 25px;
+  border-radius: 3px;
+  background-color: #40b46d;
+  color: white;
+  font-size: 60%;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #338e56;
+}
+
+.section-app {
+  background-color: #e4e2e2;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 5% 0;
+}
+
+.app {
+  flex: 1;
+  justify-content: center;
+  margin: 0 10%;
+}
+
+.app-photo img {
+  height: 350px;
+  margin-top: 10%;
+}
+
+.section-features {
+  display: flex;
+  margin: 5% 10%;
+}
+
+.features-photo img {
+  height: 400px;
+}
+
+.feature {
+  flex: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
