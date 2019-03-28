@@ -5,9 +5,9 @@
 }
 
 html {
-  width: 1200px;
   text-align: left;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 body {
@@ -48,8 +48,7 @@ header {
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  width: 100%;
+  height: 85vh;
 }
 
 .header-title {
@@ -111,6 +110,36 @@ header {
 
 .feature {
   flex: 1;
+}
+
+.section-gallery {
+  background-color: #e4e2e2;
+  display: flex;
+  padding: 5% 0;
+}
+
+.gallery {
+  margin: 0 10%;
+}
+
+.gallery-camera {
+  color: #40b46d;
+}
+
+.myslidess {
+  height: 300px;
+  width: 500px;
+}
+
+.gallery-text {
+  margin: 0 10%;
+  text-align: center;
+}
+.gallery-text i {
+  margin-bottom: 10px;
+}
+.gallery-text h3 {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
