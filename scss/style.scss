@@ -1,3 +1,15 @@
+
+
+$white-header: rgba(255, 255, 255, 0.788);
+$secondary-green: #40b46d;
+$background-grey: rgb(228, 226, 226);
+
+@mixin background-config {
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,9 +26,7 @@ body {
     font-size: 20px;
 }
 
-$white-header: rgba(255, 255, 255, 0.788);
-$secondary-green: #40b46d;
-$background-grey: rgb(228, 226, 226);
+
 
 //Universal text 
 
@@ -53,10 +63,8 @@ h2 {
 
 header {
     background-image: url('/img/photo-1419242902214-272b3f66ee7a.jpeg');
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: center;
-    height: 85vh;
+    @include background-config();
+    height: 70vh;
 }
 
 .header-title {
@@ -160,6 +168,72 @@ header {
         margin-bottom: 10px;
     }
 }
+
+//Subscribe section
+
+.section-subscribe {
+    background-image: linear-gradient(rgba(22, 22, 22, 0.699), rgba(31, 30, 30, 0.842)), url('/img/52121-landscape-wallpapers.jpg');
+    height: 70vh;
+    @include background-config();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .subscribe-title {
+        color: white;
+        text-transform: uppercase;
+        font-size: 95%;
+        letter-spacing: 4.7px;
+        margin-bottom: 15px;
+    }
+}
+
+
+input[type=email] {
+    border: solid 4px $secondary-green;
+    color: $secondary-green;
+    padding: 10px;
+    outline: none;
+}
+
+.fa-arrow-right {
+    padding: 15px;
+    background-color: $secondary-green;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+
+.subscribe-container {
+    display: flex;
+}
+
+//Download App section 
+
+.section-app-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-grey;
+    padding: 5% 0;
+}
+
+.fab {
+    background-color: $secondary-green;
+}
+
+.app-buttons {
+    margin: 0 20px;
+}
+
+
+.btn-app {
+    margin: 20px 7px;
+ i {
+    margin-left: 10px;
+}
+}
+
 
 
 

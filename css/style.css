@@ -48,7 +48,7 @@ header {
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  height: 85vh;
+  height: 70vh;
 }
 
 .header-title {
@@ -140,6 +140,67 @@ header {
 }
 .gallery-text h3 {
   margin-bottom: 10px;
+}
+
+.section-subscribe {
+  background-image: linear-gradient(rgba(22, 22, 22, 0.699), rgba(31, 30, 30, 0.842)), url("/img/52121-landscape-wallpapers.jpg");
+  height: 70vh;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-subscribe .subscribe-title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 95%;
+  letter-spacing: 4.7px;
+  margin-bottom: 15px;
+}
+
+input[type=email] {
+  border: solid 4px #40b46d;
+  color: #40b46d;
+  padding: 10px;
+  outline: none;
+}
+
+.fa-arrow-right {
+  padding: 15px;
+  background-color: #40b46d;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+}
+
+.subscribe-container {
+  display: flex;
+}
+
+.section-app-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e4e2e2;
+  padding: 5% 0;
+}
+
+.fab {
+  background-color: #40b46d;
+}
+
+.app-buttons {
+  margin: 0 20px;
+}
+
+.btn-app {
+  margin: 20px 7px;
+}
+.btn-app i {
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
