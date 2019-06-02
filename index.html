@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,15 +12,15 @@
 </head>
 <body>
     <header>
-    <nav>
-        <ul class="main-nav">
-            <li href="#">Home</li>
-            <li href="#">App</li>
-            <i class="fas fa-camera-retro fa-2x"></i>
-            <li href="#">Design</li>
-            <li href="#">Download</li>
-        </ul>
-    </nav>
+            <div class="topnav" id="myTopnav">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#photoapp">App</a>
+                    <a href="#design">Design</a>
+                    <a href="#download">Download</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
 
         <div class="header-title">
             <h1>Your Imagination, your photo</h1>
@@ -27,13 +28,11 @@
             <button class="btn header-btn">Get Started</button>
         </div>
 
-        <div class="header-icons">
-
-        </div>
+       
 
 </header>
 
-<section class="section-app">
+<section class="section-app" id="photoapp">
     <div class="app app-description">
     <h2>Take the picture that you envision in your <br> head 
         with this perfect app. </h2>
@@ -47,20 +46,23 @@
         </div>
 
         <div class="app app-photo">
-            <img src="img/result_full.png" alt="photo on mobile">
+            <img src="img/plantstore-flowering-cherry-blossom-2.jpg" alt="Cherry blossom trees">
         </div>
     </section>
 
-        <section class="section-features">
+        <section class="section-features" id="design">
             <div class="feature features-photo">
-                <img src="img/iphone.png">
+                <img src="img/iphone.png" alt="An iphone with green background">
             </div>
         
         <div class="feature features-description mySlides">
-            <h2>Design</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsa, quidem dolor
-                 deleniti alias modi animi eum veritatis quia dolores est harum quasi, nostrum porro
-                  ea at? Nam, libero mollitia.</p>
+            <h2>Capture</h2>
+            <p>Capture the perfect image with the in-app camera mode. It comes 
+                with a host of pre-made filters if you desire to have so but also 
+                in normal mode, the app will scan everything in the frame and optimise 
+                the colours in it to give the most exuberant or natural photo, 
+                depending on your desire.
+            </p>
             <button class="btn header-btn">Learn More</button>
             <div class="feature-slide-btn">
                     <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
@@ -68,34 +70,40 @@
                 </div>  
         </div>
         
-        <div class="feature features-description mySlides">
-                <h2>Baby</h2>
-                <p>LHHHDJSFBJDSKNFLKSDNFLKSDNFDKLS adipisicing elit. Consequuntur ipsa, quidem dolor
-                     deleniti alias modi animi eum veritatis quia dolores est harum quasi, nostrum porro
-                      ea at? Nam, libero mollitia.</p>
-                <button class="btn header-btn">Learn More</button>
-                <div class="feature-slide-btn">
-                        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-                    </div>  
-            </div>   
+
+            <div class="feature features-description mySlides" >
+                    <h2>Add to</h2>
+                    <p>Add elements to your picture to attain the effect you desire. 
+                        This can be something to add a bit of fun or personality to your 
+                        image or something more lifelike, like to add a sun with the light 
+                        effects that having so would give and brighten up a particular image. 
+                        It can bring a whole new element to your pictures and can be great fun to use!
+                    </p>
+                    <button class="btn header-btn">Learn More</button>
+                    <div class="feature-slide-btn">
+                            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+                        </div> 
+                </div> 
+               
     </section>
 
     <section class="section-gallery">
         <div class="gallery-text">
             <i class="gallery-camera fas fa-camera-retro fa-2x"></i>
             <h3>Our Community</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                 Ipsa natus numquam saepe possimus magni,
-                 voluptatibus ad reprehenderit sed culpa est?</p>
+            <p>Join our community and share your collection of pictures.
+                Get ideas from many of the others in the community or share the 
+                techniques you have used to achive partciular looks and effects!
+                
+            </p>
         </div>
 
         <div class="gallery">
-                <img class="mySlidess" src="/img/photo1.jpg">
-                <img class="mySlidess" src="/img/photo2.jpg">
-                <img class="mySlidess" src="/img/photo3.jpg">
+                <img class="mySlidess" src="/img/photo1.jpg" alt="A green tinted sky">
+                <img class="mySlidess" src="/img/photo2.jpg" alt="Tidal waves">
+                <img class="mySlidess" src="/img/photo3.jpg" alt="A sunset sky">
                 </div>
-              </div>
     </section>
 
     <section class="section-subscribe">
@@ -105,20 +113,33 @@
             <input  type="email" placeholder="Enter email">
             <i class="fas fa-arrow-right"></i>
             </div>
+            <button class="btn subscribe-btn">Submit</button>
         </form>
     </section>
 
-    <section class="section-app-download">
+    <section class="section-app-download" id="download">
         <h3>Download It</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-             Odio distinctio est quidem?
-             Cum ad accusamus impedit consectetur et animi quam.</p>
+        <p>Download the app from the Apple Store for your apple device 
+            or play store for your android device.</p>
              <div class="app-buttons">
                 <button class="btn btn-app">Apple Store<i class="fab fa-apple fa-2x"></i></button>
-                <button class="btn btn-app">Android Store<i class="fab fa-android fa-2x"></i></button>
+                <button class="btn btn-app">Play Store<i class="fab fa-android fa-2x"></i></button>
              </div>
     </section>
     
+    <footer>
+        <div class="footer-text">
+        <ul class="footer-nav">
+            <li><a href="#">Credits</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Our Teams</a></li>
+        </ul>
+        <p>Copyright by Image-app - all rights reserved</p>
+    </div>
+        <div class="footer-icon">
+            <i class="fas fa-camera-retro fa-3x"></i>
+        </div>
+    </footer>
 
      
 
